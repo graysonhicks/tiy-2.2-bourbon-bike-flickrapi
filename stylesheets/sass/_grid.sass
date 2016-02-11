@@ -1,0 +1,59 @@
+/* HEADER */
+
+header
+  @include outer-container
+  text-align: center
+  height: 365px
+
+.logoandname
+  @include outer-container
+  padding-top: 60px
+  img
+    @include span-columns(2)
+    @include shift(5)
+
+  h1
+    @include span-columns(6)
+    @include shift(3)
+    margin-top: 15px
+
+/* SECTIONS */
+
+section
+  margin-top: 10px
+  margin-bottom: 10px
+
+.first
+  height: 120px
+  h4
+    padding-top: 45px
+
+/* FLICKR PICS */
+
+.slides
+  @include outer-container
+  .slide
+    @include span-columns(4)
+    margin-right: 5px
+    display: inline-block
+    float: none
+    clear: both
+    img
+      height: 248px
+/* MAP */
+
+.map
+  @include span-columns(6)
+  padding-top: 5px
+  padding-left: 5px
+
+.contact
+  @include span-columns(6)
+
+/* FOOTER */
+
+footer
+  text-align: center
+  height: 70px
+  h3
+    padding-top: 25px

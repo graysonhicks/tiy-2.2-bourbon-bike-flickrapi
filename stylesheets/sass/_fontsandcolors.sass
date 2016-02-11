@@ -1,0 +1,40 @@
+body
+  background-image: url('../../img/bg.jpg')
+  background-size: cover
+
+
+
+header
+  background: linear-gradient(rgba($blue, 0.6), rgba($blue, 0.8)), url('../../img/header.jpg')
+
+footer
+  background-color: $blue
+
+header
+  border: 4px solid white
+  h1
+    font-size: $base-font-size*2.25
+
+section
+  @include section-border-shadow
+
+.slides
+  img
+    @include section-border-shadow
+
+.first,
+.third
+  background-color: lighten($blue, 12.5%)
+
+.second,
+.fourth
+  background-color: lighten($blue, 25%)
+  h4
+    font-size: 1em
+
+.fourth
+  border-bottom: none
+
+footer
+  @include section-border-shadow
+  border-top: none
